@@ -3,12 +3,26 @@ import { createStore } from 'vuex'
 const store = createStore({
     state () {
         return {
-            count: 0
+            user: {
+                token: '',
+                loggedIn: false,
+            }
         }
     },
+    getters: {
+        token(state) {
+            return state.user.token;
+        },
+        user(state) {
+            return state.user;
+        },
+    },
     mutations: {
-        increment (state) {
-            state.count++
+        setAppToken(state, token) {
+            state.user.token = token;
+        },
+        setUser(state, data) {
+            state.user = data;
         }
     }
 })
