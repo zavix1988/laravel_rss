@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Login from "../components/Login/Login.vue";
 
 const router = createRouter({
+    mode: history,
     history: createWebHistory(),
     routes: [
         // { path: '/', component: Posts },
