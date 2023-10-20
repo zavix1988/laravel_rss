@@ -14,7 +14,7 @@ const vuetify = createVuetify({
 
 import router from './router'
 
-import App from './components/App.vue'
+import App from './views/App.vue'
 import store from "./store";
 
 createApp(App)
